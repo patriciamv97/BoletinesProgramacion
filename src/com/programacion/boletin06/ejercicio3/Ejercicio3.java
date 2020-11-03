@@ -1,4 +1,5 @@
-package com.programacion.boletin06;
+package com.programacion.boletin06.ejercicio3;
+
 import java.util.Scanner;
 
 public class Ejercicio3 {

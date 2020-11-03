@@ -1,4 +1,4 @@
-package com.programacion.boletin06;
+package com.programacion.boletin06.ejercicio1;
 
 public class Coche {
     //Atributos

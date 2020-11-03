@@ -1,4 +1,4 @@
-package com.programacion.boletin06;
+package com.programacion.boletin06.ejercicio2;
 
 public class Satelite {
     //Atributos
