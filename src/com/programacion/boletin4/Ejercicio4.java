@@ -12,7 +12,7 @@ public class Ejercicio4 {
         System.out.println("O ano é : ");
         int a = sc.nextInt();
         System.out.println("O numero de Paxinas é : ");
-        Short p = sc.nextShort();
+        short p = sc.nextShort();
         System.out.println("A valoración é : ");
         float va= sc.nextFloat ();
         System.out.println("O titulo é " +t+ "\no  autor é "+at+"\nO ano é "+a+"\nO numero de páginas é "+p+"\nA valoración é "+va);
