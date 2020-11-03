@@ -1,4 +1,4 @@
-package com.programacion.boletin4;
+package com.programacion.boletin04;
 
 public class Libro {
     private String titulo;

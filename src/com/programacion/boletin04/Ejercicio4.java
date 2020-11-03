@@ -1,4 +1,4 @@
-package com.programacion.boletin4;
+package com.programacion.boletin04;
 import java.util.Scanner;
 public class Ejercicio4 {
     public static void main(String[] args) {

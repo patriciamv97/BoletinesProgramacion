@@ -1,4 +1,4 @@
-package com.programacion.boletin5;
+package com.programacion.boletin05;
 
 public class Consumo {
     // Atributos

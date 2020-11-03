@@ -1,4 +1,4 @@
-package com.programacion.boletin2;
+package com.programacion.boletin02;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
