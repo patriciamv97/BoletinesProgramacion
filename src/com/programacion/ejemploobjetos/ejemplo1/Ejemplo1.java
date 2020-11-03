@@ -1,4 +1,6 @@
-package com.programacion.ejemplosobjeto;
+package com.programacion.ejemploobjetos.ejemplo1;
+
+import com.programacion.ejemploobjetos.ejemplo1.Rectangulo;
 
 public class Ejemplo1 {
     public static void main(String[] args) {

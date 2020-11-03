@@ -1,4 +1,4 @@
-package com.programacion.ejemplosobjeto;
+package com.programacion.ejemploobjetos.ejemplo1;
 
 public class Rectangulo {
     // atributos
