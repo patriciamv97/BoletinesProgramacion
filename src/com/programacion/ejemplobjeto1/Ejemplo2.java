@@ -1,4 +1,4 @@
-package com.programacion.ejemplobjeto2;
+package com.programacion.ejemplobjeto1;
 import java.util.Scanner;
 public class Ejemplo2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.programacion.ejemplobjeto1;
+package com.programacion.ejemplosobjeto;
 
 public class Ejemplo1 {
     public static void main(String[] args) {
