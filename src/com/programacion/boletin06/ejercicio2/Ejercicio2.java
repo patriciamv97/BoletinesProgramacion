@@ -4,5 +4,7 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         Satelite obx= new Satelite (3,4,60000);
         obx.verPosicion();
+        Satelite obx2 = new Satelite();
+        obx2.verPosicion();
     }
 }
