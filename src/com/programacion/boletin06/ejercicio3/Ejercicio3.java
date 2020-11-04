@@ -9,8 +9,8 @@ public class Ejercicio3 {
         obxC.calcularArea();
         obxC.calcularLonxitude();
 
-        Circulo obxC2 =new Circulo(3,3.14);
-        obxC2.calcularArea();
-        obxC2.calcularLonxitude();
+        Circulo obxC2 =new Circulo(3);
+        System.out.println("O area é : " +obxC2.calcularArea());
+        System.out.println("A lonxitude da circunferencia é :" + obxC2.calcularLonxitude());
     }
 }

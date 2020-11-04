@@ -12,9 +12,10 @@ public class Coche {
 
     }
 
-//Metdos
+    //Metodos
 
     public int getVelocidade(){
+
         return velocidade;
 
     }
@@ -26,8 +27,8 @@ public class Coche {
 
     public void frenar(int menos){
 
-        velocidade=velocidade-menos;
-        System.out.println("O decremento de velocidade é : "+velocidade);
+        velocidade=velocidade  -menos;
+        System.out.println("O decremento de velocidade é : " + velocidade);
 
     }
 }
