@@ -21,7 +21,7 @@ public class Circulo {
     }
 
     /**
-     * Crea un círculo a partir de su orixen su radio
+     * Crea un círculo a partir do seu radio
      * @param r
      */
 
