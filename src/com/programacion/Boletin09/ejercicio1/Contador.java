@@ -1,19 +1,19 @@
 package com.programacion.Boletin09.ejercicio1;
 
-import com.programacion.BoletinDiaExamen.Docentes;
+
 
 import javax.swing.*;
 
 public class Contador {
-    public void Contador() {
+    public void Contar() {
         int numero, cero = 0, negativo = 0, positivo = 0;
         for (int i = 0; i < 10; i++) {
             numero = Integer.parseInt(JOptionPane.showInputDialog("Introduce numero"));
             if (numero >= 0)
                 if (numero == 0)
-                    cero = cero + 1;
+                    cero++;
                 else
-                    positivo = positivo + 1;
+                    positivo++;
             else
                 negativo = negativo + 1;
 
