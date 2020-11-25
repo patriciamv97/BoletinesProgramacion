@@ -1,4 +1,4 @@
-package com.programacion.Boletin09;
+package com.programacion.Boletin09.ejercicio1;
 
 import com.programacion.BoletinDiaExamen.Docentes;
 
