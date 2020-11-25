@@ -1,4 +1,4 @@
-package com.programacion.Boletin09.ejercicio1;
+package com.programacion.boletin09.ejercicio1;
 
 
 

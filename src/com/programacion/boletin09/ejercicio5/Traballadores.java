@@ -1,4 +1,4 @@
-package com.programacion.Boletin09.ejercicio5;
+package com.programacion.boletin09.ejercicio5;
 
 import com.programacion.metodos.Metodos;
 

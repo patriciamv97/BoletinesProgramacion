@@ -1,4 +1,4 @@
-package com.programacion.Boletin09.ejercicio4;
+package com.programacion.boletin09.ejercicio4;
 
 import javax.swing.*;
 

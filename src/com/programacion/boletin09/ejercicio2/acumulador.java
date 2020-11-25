@@ -1,4 +1,4 @@
-package com.programacion.Boletin09.ejercicio2;
+package com.programacion.boletin09.ejercicio2;
 
 
 public class acumulador {
