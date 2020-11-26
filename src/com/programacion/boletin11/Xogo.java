@@ -3,13 +3,18 @@ package com.programacion.boletin11;
 import javax.swing.*;
 
 public class Xogo {
-    public void adivinarNumero() {
-        int n, cantidad, n1 , intentos = 0,n2;
+    int n,n1;
+    public void validar(){
         n = Integer.parseInt(JOptionPane.showInputDialog("Primeiro xogador ,introduce un número entre 1 e 50"));
         do {
             n1 = Integer.parseInt(JOptionPane.showInputDialog("Debes introducir un número entre 1 e 50"));
 
         } while (n1 < 1 || n1 > 50);
+
+
+    }
+    public void adivinarNumero() {
+        int  cantidad,intentos = 0,n2;
 
             cantidad = Integer.parseInt(JOptionPane.showInputDialog("Xogador 1,introduce o número de intentos que ten o segundo xogador"));
         do {
