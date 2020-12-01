@@ -21,7 +21,6 @@ public class Area {
         float base = validacion("Introduzca a base do cadrado : ");
         float altura = validacion("Introduzca a altura do cadrado :");
         return base*altura;
-        //return Float.parseFloat(System.out.println("O area é " + base*altura));
-        //return Float.parseFloat(JOptionPane.showMessageDialog(null,"O area do cadrado é :"+area));
+
     }
 }
