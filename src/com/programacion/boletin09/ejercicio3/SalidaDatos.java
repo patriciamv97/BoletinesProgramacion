@@ -1,8 +1,9 @@
 package com.programacion.boletin09.ejercicio3;
 
+import javax.swing.*;
+
 public class SalidaDatos {
     public static void main(String[] args) {
-        Area obx = new Area();
-        obx.calcularArea();
+        JOptionPane.showMessageDialog(null,"O area do rectangulo é : " +Area.getInstance().calcularArea());
     }
 }

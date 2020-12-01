@@ -3,6 +3,12 @@ package com.programacion.boletin09.ejercicio3;
 import javax.swing.*;
 
 public class Area {
+    private static Area instance;
+    public static Area getInstance(){
+        if (instance==null)
+            instance=new Area();
+        return instance;
+    }
     public float validacion(String menxase) {
         float dato;
         do {
