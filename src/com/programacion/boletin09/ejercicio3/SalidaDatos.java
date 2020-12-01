@@ -4,6 +4,6 @@ import javax.swing.*;
 
 public class SalidaDatos {
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null,"O area do rectangulo é : " +Area.getInstance().calcularArea());
+        JOptionPane.showMessageDialog(null,"O area do rectangulo é igual a : " +Area.getInstance().calcularArea());
     }
 }
