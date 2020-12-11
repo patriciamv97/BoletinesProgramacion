@@ -1,11 +1,11 @@
-package com.programacion.boletin11;
+package com.programacion.boletin11.ejercicio1;
 
 import javax.swing.*;
 
 public class Xogo {
-    int n1;
 
-    public int validar(String mensaxe) {
+    public  int validar(String mensaxe) {
+        int n1;
         do {
             n1 = Integer.parseInt(JOptionPane.showInputDialog(mensaxe));
 

@@ -1,4 +1,4 @@
-package com.programacion.boletin11;
+package com.programacion.boletin11.ejercicio1;
 
 
 public class Principal {
