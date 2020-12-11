@@ -14,7 +14,7 @@ public class Random {
 
     public void numeroAleatorio() {
         num = (int) (Math.random() * 50 + 1);
-       System.out.println(num);
+       //System.out.println(num); Para comprobaciones
 
 
     }
