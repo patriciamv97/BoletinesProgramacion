@@ -6,8 +6,9 @@ public class Murcielago extends Mamifero implements IPodeVoar {
     public void podenVoar() {
         System.out.println("Os murcielagos poden voar");
     }
-}
- public  void amosar(){
-     System.out.println("Os murcielagos son mamiferos ");
 
- }
+    public void amosar() {
+        System.out.println("Os murcielagos son mamiferos ");
+    }
+
+}
