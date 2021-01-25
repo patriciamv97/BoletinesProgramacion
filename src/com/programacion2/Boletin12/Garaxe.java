@@ -10,31 +10,28 @@ public class Garaxe {
     private float tempo;
     private Coche coche;
 
+    //Variables
+
+    public float prezo;
+    public float cartosRecibidos;
+
     //Constante
     public static final int NumeroMaximoCoches = 5;
 
-    //Constructor
-    public float getTempo() {
-        return tempo;
-    }
-    public void setTempo(float tempo) {
-        this.tempo = tempo;
-    }
+    //Constructores
 
-    public Coche getCoche() {
-        return coche;
-    }
-
-    public void setCoche(Coche coche) {
-        this.coche = coche;
+    public Garaxe() {
     }
 
     public Garaxe(Coche coche) {
     }
+    //getter
+    public float getTempo() {
+        return tempo;
+    }
 
 
-
-    public void comprobarPlazas(Coche coche) {
+    public  void comprobarPlazas() {
 
         if (numeroCoches < NumeroMaximoCoches) {
             System.out.println("Plazas dispoñibles " + (NumeroMaximoCoches-numeroCoches));
@@ -47,7 +44,7 @@ public class Garaxe {
     }
 
     public float calcularPrezo() {
-        float prezo;
+
         tempo=Float.parseFloat(JOptionPane.showInputDialog("tempo estacionamento"));
         if (tempo <= 3) {
             prezo = (float) (1.5 * tempo);
@@ -59,16 +56,16 @@ public class Garaxe {
     }
 
     public float cartosRecibidos(){
-        float cartosRecibidos =Float.parseFloat(JOptionPane.showInputDialog("Introduzca os cartos"));
+        cartosRecibidos =Float.parseFloat(JOptionPane.showInputDialog("Introduzca os cartos"));
         return cartosRecibidos;
     }
 
-    public void factura(){
+    public void factura(Coche coche){
         System.out.println("MATRICULA "+ coche.toString()+
                 "\nTEMPO "+getTempo()+
-                "\nPREZO"+ calcularPrezo()+
-                "\nCARTOS RECIBIDOS"+ cartosRecibidos()+
-                "\nCARTOS DEVOLTOS" + (cartosRecibidos()-calcularPrezo())+
+                "\nPREZO "+ prezo+
+                "\nCARTOS RECIBIDOS "+ cartosRecibidos() +
+                "\nCARTOS DEVOLTOS " + (cartosRecibidos - prezo)+
                 "\nGRACIAS POR USAR O NOSO APARCADOIRO");
     }
 }

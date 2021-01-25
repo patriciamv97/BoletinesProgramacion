@@ -8,12 +8,14 @@ public class Coche {
 
     /**
      * Constructor parametrizado
-     * @param matriculaCoche
+     * @param matriculaCoche recibe a matricula do coche
      */
 
     public Coche(String matriculaCoche) {
+
         this.matriculaCoche = matriculaCoche;
     }
+
 
     /**
      * Metodo que accede al atributo de la clase Coche
@@ -22,6 +24,6 @@ public class Coche {
 
     @Override
     public String toString() {
-        return "matriculaCoche='" + matriculaCoche;
+        return  matriculaCoche;
     }
 }
