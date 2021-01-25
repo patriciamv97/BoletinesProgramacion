@@ -10,8 +10,7 @@ public class Main {
 
         try{
 
-            System.out.println("A temperatura en grados fharenheit é : "+ct.centigradosAFharenheit(centigrados));
-            System.out.println("A temperatura en grados reamur é : "+ct.centigradosAReamur(centigrados));
+            System.out.println("A temperatura en grados fharenheit é : "+ct.centigradosAFharenheit(centigrados)+"\nA temperatura en grados reamur é : "+ct.centigradosAReamur(centigrados));
 
         }catch (TemperaturaErradaExcepcion e){
             System.out.println(e.toString());
