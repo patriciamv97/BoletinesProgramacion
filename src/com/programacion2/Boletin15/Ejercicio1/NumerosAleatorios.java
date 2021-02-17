@@ -16,12 +16,12 @@ public class NumerosAleatorios {
 
    }
    public void ordenarOReves(int[]num1){
-       float aux = 0.0f;
+        int aux = 0;
        for (int i = 0; i < num1.length-1; i++) {
            for (int j = i + 1; j < num1.length; j++) {
                aux = num1[j];
                num1[j] = num1[i];
-               num1[i] = (int) aux;
+               num1[i] = aux;
            }
 
        }
