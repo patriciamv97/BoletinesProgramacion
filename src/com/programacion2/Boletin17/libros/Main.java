@@ -1,6 +1,6 @@
 package com.programacion2.Boletin17.libros;
 
-import com.metodos.Metodos;
+import com.metodos.MisMetodos;
 import com.programacion2.Boletin17.aplicacion.Aplicacion;
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ public class Main {
         ArrayList<Libro> libros = new ArrayList();
         String opcion;
         do {
-            opcion = Metodos.pedirString("***Menu***\n1-->Engadir\n2-->Amosar sin ordenar\n3-->Amosar ordenado\n4-->Consultar\n5-->Vender\n6-->Dar de baixa\n7-->Sair");
+            opcion = MisMetodos.pedirString("***Menu***\n1-->Engadir\n2-->Amosar sin ordenar\n3-->Amosar ordenado\n4-->Consultar\n5-->Vender\n6-->Dar de baixa\n7-->Sair");
             switch (opcion) {
                 case "1":
                     Aplicacion.engadir(libros);

@@ -1,6 +1,6 @@
 package com.programacion2.Boletin17.aplicacion;
 
-import com.metodos.Metodos;
+import com.metodos.MisMetodos;
 import com.programacion2.Boletin17.libros.ExcepcionArray;
 import com.programacion2.Boletin17.libros.Libro;
 
@@ -11,11 +11,11 @@ import java.util.Iterator;
 public class Aplicacion {
 
     public static Libro pedirLibro(String mensaxe) {
-        String titulo = Metodos.pedirString("Introduce o titulo do libro");
-        String autor = Metodos.pedirString("Introduce o autor do libro");
-        String ISBN = Metodos.pedirString("Introduce o ISBN do libro");
-        float prezo = Metodos.pedirFloat("Introduzca o prezo do libro");
-        int nUnidades = Metodos.pedirInt("Introduzca o numero de unidades que hai do libro");
+        String titulo = MisMetodos.pedirString("Introduce o titulo do libro");
+        String autor = MisMetodos.pedirString("Introduce o autor do libro");
+        String ISBN = MisMetodos.pedirString("Introduce o ISBN do libro");
+        float prezo = MisMetodos.pedirFloat("Introduzca o prezo do libro");
+        int nUnidades = MisMetodos.pedirInt("Introduzca o numero de unidades que hai do libro");
         Libro libro = new Libro(titulo, autor, ISBN, prezo, nUnidades);
         return libro;
     }
@@ -34,7 +34,7 @@ public class Aplicacion {
             int unidades;
             boolean atopado = false;
             Iterator it = libros.iterator();
-            String libroVendido = Metodos.pedirString("Introduce o ISBN do libro vendido");
+            String libroVendido = MisMetodos.pedirString("Introduce o ISBN do libro vendido");
             while (it.hasNext()) {
                 Libro libro = (Libro) it.next();
                 if (libro.getISBN().equalsIgnoreCase(libroVendido)) {
@@ -96,7 +96,7 @@ public class Aplicacion {
         if (libros.isEmpty()) {
             throw new ExcepcionArray("O array está vacio");
         } else {
-            String libroConsultar = Metodos.pedirString("Introduce o titulo do libro que queras consultar");
+            String libroConsultar = MisMetodos.pedirString("Introduce o titulo do libro que queras consultar");
             for (Libro lib : libros) {
                 if (lib.getTitulo().equalsIgnoreCase(libroConsultar)) {
                     System.out.println("Titulo : " + lib.getTitulo() + "\nAutor : " + lib.getAutor() + "\nISBN : " + lib.getISBN() +
