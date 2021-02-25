@@ -27,41 +27,49 @@ public class Aplicacion {
     }
 
     public static void vender(ArrayList<Libro> libros) throws ExcepcionArray {
-        if (libros.isEmpty() == true) {
+        if (libros.isEmpty()) {
             throw new ExcepcionArray("O array está vacio");
         } else {
+
+            int unidades;
             boolean atopado = false;
-            int unidades = 0;
             Iterator it = libros.iterator();
             String libroVendido = Metodos.pedirString("Introduce o ISBN do libro vendido");
             while (it.hasNext()) {
                 Libro libro = (Libro) it.next();
                 if (libro.getISBN().equalsIgnoreCase(libroVendido)) {
+                    atopado = true;
                     unidades = libro.getnUnidades();
                     if (unidades == 0) {
-                        System.out.println("Non se dispoñe de undidades do libro " + libro.getTitulo());
-                        atopado = true;
+                        System.out.println("\nNon se dispoñe de undidades do libro " + libro.getTitulo());
                     } else {
+                        if (unidades == 1) {
+                            unidades = 0;
+                            libro.setnUnidades(unidades);
+                        }
+                        if (unidades>1) {
+                            unidades--;
+                            libro.setnUnidades(unidades);
+                            System.out.println("\nAs unidades do libro " + libro.getTitulo() + " que quedan son : " + unidades);
 
-                        unidades--;
-                        libro.setnUnidades(unidades);
-                        atopado = true;
-                        System.out.println("\nAs unidades do libro " + libro.getTitulo() + " que quedan son : " + unidades);
+                        }
                     }
 
+                }
 
-                }
-                if (atopado == false) {
-                    System.out.println("\nO libro non se encontra na libreria");
-                }
+
+            }
+            if (!atopado) {
+                System.out.println("\nO libro non se atopa na libreria");
             }
         }
+
     }
+
     public static void darDeBaixa(ArrayList<Libro> libros) throws ExcepcionArray {
-        if (libros.isEmpty()==true){
+        if (libros.isEmpty()) {
             throw new ExcepcionArray("O array está vacio");
-        }
-        else {
+        } else {
             Iterator it = libros.iterator();
             while (it.hasNext()) {
                 Libro libro = (Libro) it.next();
@@ -74,22 +82,20 @@ public class Aplicacion {
     }
 
     public static void amosar(ArrayList<Libro> libros) throws ExcepcionArray {
-        if (libros.isEmpty()==true){
+        if (libros.isEmpty()) {
             throw new ExcepcionArray("O array está vacio");
-        }
-        else
-        for (Libro lib : libros) {
-            System.out.println("\n" + lib + "\n");
-        }
+        } else
+            for (Libro lib : libros) {
+                System.out.println("\n" + lib + "\n");
+            }
     }
 
 
     public static void consultar(ArrayList<Libro> libros) throws ExcepcionArray {
 
-        if (libros.isEmpty() == true) {
+        if (libros.isEmpty()) {
             throw new ExcepcionArray("O array está vacio");
         } else {
-            Iterator it = libros.iterator();
             String libroConsultar = Metodos.pedirString("Introduce o titulo do libro que queras consultar");
             for (Libro lib : libros) {
                 if (lib.getTitulo().equalsIgnoreCase(libroConsultar)) {
@@ -100,6 +106,7 @@ public class Aplicacion {
         }
 
     }
+
     public static void ordenar(ArrayList<Libro> libros) {
         Collections.sort(libros);
     }
