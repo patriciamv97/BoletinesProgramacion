@@ -10,26 +10,48 @@ public class Main {
         ArrayList<Libro> libros = new ArrayList();
         String opcion;
         do {
-            opcion = JOptionPane.showInputDialog("***Menu***\n1-->Engadir\n2-->Amosar\n3-->Ordenar\n4-->Consultar\n5-->Vender\n6-->Dar de baixa\n7-->Sair");
+            opcion = JOptionPane.showInputDialog("***Menu***\n1-->Engadir\n2-->Amosar sin ordenar\n3-->Amosar ordenado\n4-->Consultar\n5-->Vender\n6-->Dar de baixa\n7-->Sair");
             switch (opcion) {
                 case "1":
                     Aplicacion.engadir(libros);
                     break;
                 case "2":
-                    Aplicacion.amosar(libros);
+                    try {
+                        Aplicacion.amosar(libros);
+                    } catch (ExcepcionArray e) {
+                        System.out.println(e.getMessage());
+                    }
+
                     break;
                 case "3":
-                    Aplicacion.ordenar(libros);
-                    Aplicacion.amosar(libros);
+                    try {
+                        Aplicacion.ordenar(libros);
+                        Aplicacion.amosar(libros);
+                    } catch (ExcepcionArray e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case "4":
-                    Aplicacion.consultar(libros);
+                    try {
+                        Aplicacion.consultar(libros);
+                    } catch (ExcepcionArray e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case "5":
-                    Aplicacion.vender(libros);
+                    try {
+                        Aplicacion.vender(libros);
+                    } catch (ExcepcionArray e) {
+                        System.out.println(e.getMessage());
+                    }
+
                     break;
                 case "6":
-                    Aplicacion.darDeBaixa(libros);
+                    try {
+                        Aplicacion.darDeBaixa(libros);
+                    } catch (ExcepcionArray e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case "7":
                     System.exit(0);
