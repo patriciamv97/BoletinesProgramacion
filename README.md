@@ -17,4 +17,8 @@
 [Boletin 16](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion2/Boletin16)  
 [Boletin 17](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion2/Boletin17)  
 [Boletin 18](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion2/Boletin18)  
-
+## 3ª evaluación
+[Boletin 19](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin19)  
+[Boletin 20](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin20)  
+[Boletin 21](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin21/src)  
+[Boletin 22](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin22/src)  
