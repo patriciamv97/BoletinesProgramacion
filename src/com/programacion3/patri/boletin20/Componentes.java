@@ -26,22 +26,19 @@ public class Componentes {
         boton=new JButton("BOTON");
         LtextoNome = new JTextField();
         LtextoContrasenha = new JTextField();
-        elementos=new JTextArea();
+        elementos=new JTextArea("Elemento 1 \nElemento 2\nElemento 3");
         aTexCopia = new JTextArea(" Area de Texto.");
         etiqueta = new JLabel("Nome :");
         etiqueta2 = new JLabel("Contraseña :");
 
         //Distribucion paneles
         marco.setSize(800, 800);
-        panel.setBounds(40,35,700,400);
-        panel2.setBounds(40,20,700,400);
-       // panel1.setSize(800,200);
+        panel.setBounds(40,25,700,400);
+        panel1.setBounds(40,450,700,400);
+        panel.setBorder(BorderFactory.createMatteBorder(1,1,1,1,Color.black));
+        panel1.setBorder(BorderFactory.createMatteBorder(1,1,1,1,Color.black));
         panel.setLayout(null); //Anulamos la distrubucion de los componentes por defecto del panel
         panel1.setLayout(null);
-        panel2.setLayout(null);
-        panel.setBorder(BorderFactory.createMatteBorder(1,1,1,1,Color.black));
-        panel2.setBorder(BorderFactory.createMatteBorder(1,1,1,1,Color.red));
-
 
 
 
@@ -53,11 +50,13 @@ public class Componentes {
         bEscribe.setBounds(200, 300, 150, 50);
         bEscribe.setText("PREMER");
         bEscribe.setToolTipText("copia o que temos na liña de texto na area do texto ");
-        boton.setBounds(350,550,100,50);
+        boton.setBounds(290,150,100,50);
         LtextoNome.setBounds(300, 100, 300, 50);
         LtextoContrasenha.setBounds(300, 200, 300, 50);
-        aTexCopia.setBounds(500, 500, 200, 200);
-       //elementos.setBounds();
+        aTexCopia.setBounds(450, 50, 200, 200);
+        aTexCopia.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        elementos.setBounds(40,50,200,200);
+        elementos.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         etiqueta.setBounds(100, 45, 100, 150);
         etiqueta2.setBounds(100, 145, 100, 150);
 
@@ -73,6 +72,7 @@ public class Componentes {
         panel.add(bLimpar);
         panel1.add(aTexCopia);
         panel1.add(boton);
+        panel1.add(elementos);
         marco.add(panel);
         marco.add(panel1);
         marco.add(panel2);
