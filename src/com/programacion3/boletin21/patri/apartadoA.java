@@ -1,4 +1,4 @@
-package patri;
+package com.programacion3.boletin21.patri;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
