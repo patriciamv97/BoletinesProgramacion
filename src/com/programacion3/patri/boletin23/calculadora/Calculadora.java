@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.programacion3.boletin23.patri;
+package com.programacion3.patri.boletin23.calculadora;
 
 /**
  *

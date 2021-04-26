@@ -1,4 +1,4 @@
-package com.programacion3.boletin21.patri;
+package com.programacion3.patri.boletin21.apartados;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

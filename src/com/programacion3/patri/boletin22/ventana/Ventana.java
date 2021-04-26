@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.programacion3.boletin22.patri;
+package com.programacion3.patri.boletin22.ventana;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

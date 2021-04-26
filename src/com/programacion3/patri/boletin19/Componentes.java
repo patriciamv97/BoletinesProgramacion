@@ -1,4 +1,4 @@
-package com.programacion3.boletin19.patri;
+package com.programacion3.patri.boletin19;
 
 import javax.swing.*;
 import java.awt.*;
