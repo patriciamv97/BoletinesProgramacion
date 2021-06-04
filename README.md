@@ -23,4 +23,5 @@
 [Boletin 21](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin21/src)  
 [Boletin 22](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin22/src)  
 [Boletin 25](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin25)   
-[Boletin 26](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin26)  
+[Boletin 26](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin26)   
+[Boletin 23](https://github.com/patriciamv97/BoletinesProgramacion/tree/master/src/com/programacion3/patri/boletin23)    
